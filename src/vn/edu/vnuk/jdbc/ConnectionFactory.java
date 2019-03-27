@@ -10,11 +10,9 @@ public class ConnectionFactory {
 		return returnConnection("jdbc:mysql://localhost/vnuk");
 	}
 	
-	
 	public Connection getConnection(String url) {
 		return returnConnection(url);
 	}
-	
 	
 	private Connection returnConnection(String url) {
 		try {
@@ -29,5 +27,4 @@ public class ConnectionFactory {
 			throw new RuntimeException(e);
 		}
 	}
-
 }

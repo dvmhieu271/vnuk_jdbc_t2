@@ -11,12 +11,11 @@ public class TestCreateContact {
 	public static void main(String[] args) throws SQLException {
 		Contact contact = new Contact();
 		
-		contact.setName("Huong");
-		contact.setEmail("huong.le@gmail.com");
+		contact.setName("Hieu");
+		contact.setEmail("hieu.duong160204@vnuk.edu.vn");
 		contact.setAddress("Da Nang");
 		contact.setDateOfRegister(Calendar.getInstance());
 		
 		new ContactDao().create(contact);
 	}
-
 }

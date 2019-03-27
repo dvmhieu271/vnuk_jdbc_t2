@@ -12,8 +12,11 @@ import java.sql.SQLException;
  *
  * @author michel
  */
+
 public class TestConnection {
-    public static void main(String args[]) throws SQLException{
+	
+    public static void main(String args[]) throws SQLException {
+    	
         try {
         	Connection connection = new ConnectionFactory().getConnection();
             

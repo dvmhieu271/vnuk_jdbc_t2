@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Sql1010CreateDatabase {
+	
 	private final Connection connection;
 	private final String sqlQuery;
 	
@@ -20,7 +21,6 @@ public class Sql1010CreateDatabase {
 		try {
 	        connection.prepareStatement(sqlQuery).execute();
 	        System.out.println("   DB \'vnuk\' successfully created");
-		
 		}
 		
 		catch (Exception e) {
@@ -32,7 +32,6 @@ public class Sql1010CreateDatabase {
 			System.out.println("<  Sql1010CreateDatabase ended");
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println("");
-		}
-			
+		}	
 	}
 }

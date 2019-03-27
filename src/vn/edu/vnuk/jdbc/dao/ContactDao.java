@@ -12,6 +12,7 @@ import vn.edu.vnuk.jdbc.ConnectionFactory;
 import vn.edu.vnuk.jdbc.model.Contact;
 
 public class ContactDao {
+	
 	private Connection connection; 
 	
 	public ContactDao() {
@@ -39,7 +40,6 @@ public class ContactDao {
 			statement.execute();
 			statement.close();
 	        System.out.println("   DATA successfully loaded in \'categories\'");
-		
 		}
 		
 		catch (Exception e) {
@@ -52,10 +52,10 @@ public class ContactDao {
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println("");
 		}
-			
 	}
-@SuppressWarnings("finally")
-public List<Contact> read() throws SQLException{
+	@SuppressWarnings("finally")
+	
+	public List<Contact> read() throws SQLException{
 		
 		PreparedStatement statement;
 		String sqlQuery = "select * from contacts";
@@ -73,8 +73,6 @@ public List<Contact> read() throws SQLException{
 			
 			results.close();
 			statement.close();
-			
-			
 		}
 		
 		catch (Exception e) {
@@ -83,7 +81,6 @@ public List<Contact> read() throws SQLException{
 		}
 		
 		finally {
-	
 			connection.close();
 			return contacts;
 		}

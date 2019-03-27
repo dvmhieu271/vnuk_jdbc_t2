@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Sql1000DropDatabase {
+	
 	private final Connection connection;
 	private final String sqlQuery;
 	
@@ -20,7 +21,6 @@ public class Sql1000DropDatabase {
 		try {
 	        connection.prepareStatement(sqlQuery).execute();
 	        System.out.println("   DB \'vnuk\' successfully dropped");
-		
 		}
 		
 		catch (Exception e) {
@@ -33,7 +33,5 @@ public class Sql1000DropDatabase {
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println("");
 		}
-			
 	}
-
 }

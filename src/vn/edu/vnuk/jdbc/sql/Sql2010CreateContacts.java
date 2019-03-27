@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Sql2010CreateContacts {
+	
 	private final Connection connection;
 	private final String sqlQuery;
 	
@@ -17,7 +18,7 @@ public class Sql2010CreateContacts {
 				+ 	"address VARCHAR(255) NOT NULL, "
 				+ 	"date_of_register DATE NOT NULL"
 				+ ");"
-			;
+		;
 	}
 	
 	public void run() throws SQLException {
@@ -28,7 +29,6 @@ public class Sql2010CreateContacts {
 		try {
 	        connection.prepareStatement(sqlQuery).execute();
 	        System.out.println("   TABLE \'contacts\' successfully created");
-		
 		}
 		
 		catch (Exception e) {
@@ -41,6 +41,5 @@ public class Sql2010CreateContacts {
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println("");
 		}
-			
 	}
 }

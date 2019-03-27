@@ -40,7 +40,6 @@ public class Sql5010InsertIntoContacts {
 			statement.execute();
 			statement.close();
 	        System.out.println("   DATA successfully loaded in \'categories\'");
-		
 		}
 		
 		catch (Exception e) {
@@ -53,6 +52,5 @@ public class Sql5010InsertIntoContacts {
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println("");
 		}
-			
 	}
 }

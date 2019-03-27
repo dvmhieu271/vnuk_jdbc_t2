@@ -9,6 +9,7 @@ import vn.edu.vnuk.jdbc.model.Contact;
 public class TestReadContacts {
 	
 	public static void main(String[] args) throws SQLException {
+		
 		ContactDao contactDao = new ContactDao();
 		List<Contact> contacts = contactDao.read();
 
